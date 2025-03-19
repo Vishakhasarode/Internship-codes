@@ -1,0 +1,99 @@
+<html lang="em">
+    <head>
+        <meta character="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODOLIST</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(45deg,#3d72b7,#afd7e5);
+            }
+            .container{
+                border: none;
+                background-color: rgb(254, 254, 254);
+                border-radius: 15px;
+                height: auto;
+                width: 30%;       
+            }
+            .header{
+                text-align: center;
+                padding: 10px;
+            }
+            .addTask{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #textbox{
+            padding: 7px;
+            width: 60%;
+            border-radius: 5px;
+        }
+        button{
+            background-color: #7ab1ec;
+            padding: 4px;
+            border-radius: 5px;
+        }
+        button:hover{
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        ul{
+            list-style: none;
+            padding: 20px;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 5px;
+            width: 50%; /* Matches the width of the textbox */
+            box-sizing: border-box; /* Ensures padding is included in the width */
+            align-items: center;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="header">Skills</h2>
+            <div class="addTask">
+                <input type="text" id="textbox" placeholder="Enter the Task">
+                <button onclick="addSkill()"> AddSkill</button>
+            </div>
+            <ul id="ul-list"></ul>
+        </div>
+        <script>
+                function addSkill()
+                    {
+                        const li = document.createElement('li')
+                        const ul=document.getElementById('ul-list')
+                        ul.appendChild(li)
+                        li.textContent=document.getElementById('textbox').value
+                        document.getElementById('textbox').value=" "
+                        deleteSkill(li)
+
+                    }
+
+                function deleteSkill(li)
+                    {
+                        const deleteBtn = document.createElement("button")
+                        deleteBtn.textContent="Delete"
+                        li.appendChild(deleteBtn)
+                        deleteBtn.onclick=function()
+                        {
+                            li.remove()
+                        }
+
+
+                    }
+        </script>
+
+    </body>
+</html>

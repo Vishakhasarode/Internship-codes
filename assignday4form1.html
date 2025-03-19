@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Sign Up Form</title>
+        <style>
+            body {
+                background-color: grey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            form {
+                background-color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#">
+            <h1>LOGIN FORM</h1>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </body>
+</html>

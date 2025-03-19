@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+   <title>Grocery Items Bill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 35%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #8DC63F;
+            color: white;
+        }
+        td:last-child, th:last-child {
+            text-align: right;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .total {
+            font-weight:bold ;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Grocery Items Bill</h1>
+    <table>
+            <tr>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        
+        
+            <tr>
+                <td>Potatoes</td>
+                <td>51</td>
+                <td>$1.00</td>
+            </tr>
+            <tr>
+                <td>Nuts</td>
+                <td>20</td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <td>Onions</td>
+                <td>4</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>Very long awkwardly named yet still delicious item here</td>
+                <td>4</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>Carrots</td>
+                <td>12</td>
+                <td>$2.99</td>
+            </tr>
+        
+
+            <tr>
+                <td colspan="2" class="total">Total Price</td>
+                <td>$33.79</td>
+            </tr>
+       
+    </table>
+</body>
+</html>

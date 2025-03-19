@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+            width: 30%;
+            background-color: rgb(73, 182, 138);
+            
+        }
+        tr,th,td{
+            border: 1px solid black;
+            border: spacing 5px;;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Presenting the Data in HTML table</h1>
+    <table>
+        <tr>
+            <th>Empid</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Incentives</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>King</td>
+            <td>56000</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ernst</td>
+            <td colspan="2">45000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John</td>
+            <td colspan="2">54000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Max</td>
+            <td>61000</td>
+            <td rowspan="2">20000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Paul</td>
+            <td>43000</td>
+        </tr>
+    </table>
+</body>
+</html>

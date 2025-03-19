@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    height: 100vh; /* Ensures the body takes up the full screen height */
+    background: linear-gradient(to right, #868383, #ffffff); /* Add your desired gradient colors */
+    display: flex; /* Optional: helps center content */
+    flex-direction: column; /* Ensures column layout */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+  
+}
+.container{
+    text-align: center;
+    padding-top :50px;
+}
+.gallary{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+
+}
+.gallary div p{
+    text-align: center;
+}
+.gallary div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallary div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+
+}
+.gallary div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.gallary::-webkit-scrollbar{
+    display: none;
+}
+#backbtn, #nextbtn{
+    width: 50px;
+    margin: 40px;
+    cursor: pointer;
+}
+.gallary-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}

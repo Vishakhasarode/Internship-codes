@@ -1,0 +1,111 @@
+<html>
+    <head>
+    <title>
+        Quiz
+    </title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        body{
+            font-family: 'Poppins',sans-serif;
+            background-color: #b9b3a9;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            height: auto;
+            width: 700px;
+            padding: 20px;
+            margin-top: 80px;
+            background-color: white;
+             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius :20px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        .question{
+            margin-bottom: 15px;
+        }
+         .button{
+            cursor: pointer;
+
+         }
+         .button:hover
+         {
+            background-color: rgb(177, 174, 174);
+         }
+          .result{
+            text-align: center;
+            font-weight: bold;
+          }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1 style="color: red;">Question quiz</h1>
+        <div class="quiz-container">
+            <div class="question">
+                <p style="font-weight: bold;">1.The correct sequence of HTML tags for starting a webpage is -</p>
+                <button class="button" onclick="answerQuestion(1,'Head, Title, HTML, body')">Head, Title, HTML, body</button>
+                <button class="button" onclick="answerQuestion(1,'HTML, Head, Title, Body')">HTML, Head, Title, Body</button>
+                <button class="button" onclick="answerQuestion(1,'HTML, Body, Title, Head')">HTML, Body, Title, Head</button>
+            </div>
+
+            <div class="question">
+                <p style="font-weight: bold;">2.Which of the following tag is used for inserting the largest heading in HTML?</p>
+                <button class="button" onclick="answerQuestion(2,'h1')">h1</button>
+                <button class="button" onclick="answerQuestion(2,'h4')">h4</button>
+                <button class="button" onclick="answerQuestion(2,'h6')">h6</button>
+            </div>
+
+            <div class="question">
+                <p style="font-weight: bold;">3.Which character is used to represent the closing of a tag in HTML?</p>
+                <button class="button" onclick="answerQuestion(3,'/')">/</button>
+                <button class="button" onclick="answerQuestion(3,'*')">*</button>
+                <button class="button" onclick="answerQuestion(3,'!')">!</button>
+            </div>
+
+            <div class="question">
+                <p style="font-weight: bold;">4.Which of the following element is responsible for making the text italic in HTML?</p>
+                <button class="button" onclick="answerQuestion(4,'i')">i</button>
+                <button class="button" onclick="answerQuestion(4,'italic')">italic</button>
+                <button class="button" onclick="answerQuestion(4,'it')">it</button>
+            </div>
+
+            <div class="question">
+                <p style="font-weight: bold;">5.Input is  an-</p>
+                <button class="button" onclick="answerQuestion(5,'a format tag')">a format tag</button>
+                <button class="button" onclick="answerQuestion(5,'an empty tag')">an empty tag</button>
+                <button class="button" onclick="answerQuestion(5,'both')">both</button>
+            </div>
+            <div class="result">
+                <p style="color: red;">Your Score:<span id="score">0</span>/3</p>
+
+            </div>
+        </div>
+    </div>
+            <script>
+                let score=0;
+                function answerQuestion(questionNumber,answer)
+             {  const correctAnswer= {
+
+            
+                    1:'Head, Title, HTML, body',
+                    2:'h1',
+                    3:'/'
+                }
+
+                if(answer==correctAnswer[questionNumber])
+                {
+                    score++;
+                }           
+                document.getElementById('score').textContent=score;
+            }  
+                
+                </script>
+        
+    
+    </body>
+</html>

@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1 rem 2rem;
+    background-color: #1f1f1f;
+    color: white;
+    position: sticky;
+    top: 0;
+   
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header .logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul{
+   display: flex;
+   list-style: none;
+   padding-right: 30px;
+}
+header nav ul li {
+margin: 0.15px;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1 rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    margin-left: 10px
+}
+
+header nav ul li a:hover{
+    color: #ff6b6b;
+}
+
+.hero .hero-div1 h1{
+    margin-bottom: 0;
+
+}
+
+.hero .hero-div1 p{
+    margin-top: 0;
+
+}
+
+.hero{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #053d8d,#8cbfd4);
+    text-align: center;
+    color: white;
+}
+.hero h1{
+    font-size: 3 rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+#Portfolio{
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+
+}
+
+#Portfolio h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+
+}
+
+.Projects{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+}
+.Project{
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+
+.Project:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.Project img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.Project h3{
+    margin: 1rem;
+    font-size: 1.5 rem;
+    color: #2a9bcc;
+}
+
+.Project p{
+    margin: 0 1 rem 1rem;
+    color: #555;
+    margin: 10px;
+}
+#Skills{
+   padding: 4 rem 2rem;
+   background: #1e8ad7;
+   padding-bottom: 10px;
+}
+
+#Skills h2{
+    text-align: center;
+    margin-bottom: 2 rem;
+    color: #333;
+    font-size: 2.5rem;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills div{
+    background: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#0a4a65;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ .skills div:hover{
+    transform: scale(1.1);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+ }
+
+#Contact{
+    padding: 4rem 2rem;
+    background: #1f1f1f;
+    color: white;
+}
+#Contact h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form button{
+    padding: 15px;
+    background: #67a7c2;
+    color: white;
+    border: none;
+    font-size: 1 rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3 ease;
+
+}
+
+form button:hover{
+    background: #8cbfd4;
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    font-size: 0.9;
+}
